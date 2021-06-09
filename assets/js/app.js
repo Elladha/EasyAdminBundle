@@ -450,6 +450,14 @@ const App = (() => {
 
     const createFieldsWithErrors = () => {
         const handleFieldsWithErrors = (form, pageName) => {
+            // This loop will be triggered by Assert's errors feedback at the end of formGroup
+            // and add a red border to the parent content-panel
+            form.querySelectorAll('.form-group').forEach( (formGroup) => {
+                if (formGroup.querySelectorAll('.invalid-feedback').length > 0) {
+                    formGroup.closest('.content-panel').classList.add("border", "border-danger");
+                }
+            });
+
             // Adding visual feedback for invalid fields: any ".form-group" with invalid fields
             // receives "has-error" class. The class is removed on click on the ".form-group"
             // itself to support custom/complex fields.
