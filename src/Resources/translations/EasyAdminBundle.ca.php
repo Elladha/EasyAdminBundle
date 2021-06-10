@@ -99,6 +99,7 @@ return [
     ],
 
     'form' => [
+        'summary' => 'Resum'
         // 'are_you_sure' => '',
         // 'tab.error_badge_title' => '',
     ],

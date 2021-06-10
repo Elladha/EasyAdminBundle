@@ -100,6 +100,7 @@ return [
 
     'form' => [
         'are_you_sure' => 'Sprememb, ki ste jih naredili na tem obrazcu, niste shranili.',
+        'summary' => 'Povzetek'
         // 'tab.error_badge_title' => '',
     ],
 

@@ -102,6 +102,7 @@ return [
         'are_you_sure' => 'Você não salvou as alterações feitas nesse formulário.',
         'tab.error_badge_title' => 'Uma entrada válida|%count% entradas inválidas',
         'slug.confirm_text' => 'Ao alterar o slug, você poderá quebrar links em outras páginas.',
+        'summary' => 'Resumo'
     ],
 
     'user' => [

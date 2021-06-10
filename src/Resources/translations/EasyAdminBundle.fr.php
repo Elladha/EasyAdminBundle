@@ -102,6 +102,7 @@ return [
         'are_you_sure' => 'Vous n\'avez pas sauvegardé vos modifications.',
         'tab.error_badge_title' => '1 champ invalide|%count% champs invalides',
         'slug.confirm_text' => 'Si vous modifiez le slug, vous pouvez casser des liens sur d\'autres pages.',
+        'summary' => 'Sommaire'
     ],
 
     'user' => [

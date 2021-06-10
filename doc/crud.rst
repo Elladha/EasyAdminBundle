@@ -280,6 +280,9 @@ Templates and Form Options
                 ['validation_groups' => ['my_validation_group']],
                 ['validation_groups' => ['Default'], '...' => '...'],
             );
+
+            // show a panels summary dropdown on the edit/new crud page
+            ->showPanelsSummary();
         ;
     }
 

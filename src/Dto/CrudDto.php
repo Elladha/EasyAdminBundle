@@ -46,6 +46,7 @@ final class CrudDto
     private $entityPermission;
     private $contentWidth;
     private $sidebarWidth;
+    private $showPanelsSummary;
 
     public function __construct()
     {
@@ -62,6 +63,7 @@ final class CrudDto
         $this->newFormOptions = KeyValueStore::new();
         $this->editFormOptions = KeyValueStore::new();
         $this->overriddenTemplates = [];
+        $this->showPanelsSummary = false;
     }
 
     public function getControllerFqcn(): ?string
@@ -387,5 +389,15 @@ final class CrudDto
     public function setSidebarWidth(string $sidebarWidth): void
     {
         $this->sidebarWidth = $sidebarWidth;
+    }
+
+    public function getShowPanelsSummary(): bool
+    {
+        return $this->showPanelsSummary;
+    }
+
+    public function setShowPanelsSummary(bool $showPanelsSummary): void
+    {
+        $this->showPanelsSummary = $showPanelsSummary;
     }
 }

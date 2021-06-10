@@ -100,6 +100,7 @@ return [
 
     'form' => [
         'are_you_sure' => 'Non se gardaron os cambios feitos neste formulario.',
+        'summary' => 'Resumo'
         // 'tab.error_badge_title' => '',
     ],
 

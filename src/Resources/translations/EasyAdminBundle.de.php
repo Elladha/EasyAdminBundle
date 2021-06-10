@@ -102,6 +102,7 @@ return [
         'are_you_sure' => 'Vorgenommene Änderungen wurden noch nicht gespeichert.',
         'tab.error_badge_title' => 'Eine ungültige Eingabe|%count% ungültige Eingaben',
         'slug.confirm_text' => 'Wenn Sie den Slug ändern, kann dies Links auf anderen Seiten beschädigen.',
+        'summary' => 'Zusammenfassung'
     ],
 
     'user' => [

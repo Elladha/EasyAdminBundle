@@ -129,6 +129,7 @@ class CrudFormType extends AbstractType
             'entity' => $options['entityDto'],
             'form_tabs' => $form->getConfig()->getAttribute('ea_form_tabs'),
             'form_panels' => $form->getConfig()->getAttribute('ea_form_panels'),
+            'show_panels_summary' => $options['showPanelsSummary']
         ];
     }
 
@@ -144,6 +145,7 @@ class CrudFormType extends AbstractType
                     return $dataClass ?? $options['entityDto']->getFqcn();
                 },
             ])
+            ->setDefined(['showPanelsSummary'])
             ->setDefined(['entityDto'])
             ->setRequired(['entityDto']);
     }

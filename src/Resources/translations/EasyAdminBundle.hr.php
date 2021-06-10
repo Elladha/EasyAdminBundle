@@ -100,6 +100,7 @@ return [
 
     'form' => [
         'are_you_sure' => 'Niste spremili izmjene na ovom obrascu.',
+        'summary' => 'Sažetak'
         // 'tab.error_badge_title' => '',
     ],
 

@@ -101,6 +101,7 @@ return [
     'form' => [
         'are_you_sure' => 'Jūs neįrašėte šios formos pakeitimų.',
         'tab.error_badge_title' => 'Viena neteisingą įvesti|%count% neteisingų įvesčių',
+        'summary' => 'Santrauka'
     ],
 
     'user' => [

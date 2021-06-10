@@ -366,13 +366,32 @@
 {% endblock ea_crud_widget %}
 
 {% block ea_crud_widget_panels %}
+    {% if ea_crud_form.show_panels_summary is defined and ea_crud_form.show_panels_summary %}
+        <a class="btn btn-primary show-panels-summary-btn collapsed collapsible" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <i class="fas fw fa-chevron-right collapse-icon"></i>
+            {{ 'form.summary'|trans(domain = 'EasyAdminBundle') }}
+        </a>
+
+        <div id="collapseExample" class="collapse col-5 p-0 mt-3">
+            <ul class="list-group">
+                {% for panel_name, panel in ea_crud_form.form_panels %}
+                    {% if panel.label %}
+                        <a class="list-group-item" href="#panel-{{ panel_name }}">{{ panel.label }}</a>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+
+        <hr>
+    {% endif %}
+
     {% for panel_name, panel_config in ea_crud_form.form_panels|filter(panel_config => not panel_config.form_tab or panel_config.form_tab == tab_name) %}
         {% set panel_has_header = panel_config.label|default(false) or panel_config.icon|default(false) %}
 
         {% set collapsible = panel_config.collapsible %}
         {% set collapsed = panel_config.collapsed %}
 
-        <div class="{{ panel_config.css_class ?? '' }}">
+        <div id="panel-{{ panel_name }}" class="{{ panel_config.css_class ?? '' }}">
             <div class="content-panel">
                 {% if panel_has_header %}
                     <div class="content-panel-header {{ collapsible ? 'collapsible' }} {{ panel_config.help|default(false) is not empty ? 'with-help' }}">

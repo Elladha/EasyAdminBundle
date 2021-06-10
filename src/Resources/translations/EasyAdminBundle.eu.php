@@ -100,6 +100,7 @@ return [
 
     'form' => [
         'are_you_sure' => 'Formularioen aldaketak ez dituzu gorde.',
+        'summary' => 'Laburpen'
         // 'tab.error_badge_title' => '',
     ],
 

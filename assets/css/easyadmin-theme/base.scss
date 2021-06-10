@@ -362,6 +362,16 @@ body.ea-mobile-sidebar-visible .main-sidebar {
     margin-bottom: 20px;
 }
 
+.show-panels-summary-btn.collapsible .collapse-icon {
+    color: var(--white);
+    margin-right: 5px;
+    transition: all .1s linear;
+}
+
+.show-panels-summary-btn:not(.collapsed) .collapse-icon {
+    transform: rotate(90deg);
+}
+
 .content-panel-header {
     border-bottom: var(--border-width) var(--border-style) var(--border-color);
     border-top-left-radius: var(--border-radius);

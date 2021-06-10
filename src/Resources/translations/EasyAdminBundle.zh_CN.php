@@ -102,6 +102,7 @@ return [
         'are_you_sure' => '该表单的更改还未保存',
         'tab.error_badge_title' => '有 1 条输入错误|有 %count% 条输入错误',
         'slug.confirm_text' => '如果你修改了url别名，其他页面的引用链接会出现错误。',
+        'summary' => '摘要'
     ],
 
     'user' => [

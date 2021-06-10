@@ -100,6 +100,7 @@ return [
 
     'form' => [
         'are_you_sure' => 'Et ole tallentanut muuttamiasi tietoja.',
+        'summary' => 'Yhteenveto'
         // 'tab.error_badge_title' => '',
     ],
 

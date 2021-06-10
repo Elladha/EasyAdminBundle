@@ -102,6 +102,7 @@ return [
         'are_you_sure' => 'A formon végzett módosítások nem lettek elmentve.',
         'tab.error_badge_title' => 'Érvénytelen mező|%count% érvénytelen mező',
         'slug.confirm_text' => 'Ha megváltoztatja, akkor elérhetetlenné válhatnak más oldalakon szereplő hivatkozások.',
+        'summary' => 'Összefoglaló'
     ],
 
     'user' => [

@@ -101,6 +101,7 @@ return [
     'form' => [
         'are_you_sure' => 'لم يتّم حفظ التغييرات.',
         'tab.error_badge_title' => 'حقل واحد غير صالح|%count% حقول غير صالحة',
+        'summary' => 'فهرس'
     ],
 
     'user' => [
